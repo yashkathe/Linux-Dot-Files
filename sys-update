@@ -1,0 +1,23 @@
+#!/bin/bash
+
+green_echo() {
+  echo -e "\033[32m$1\033[0m"
+}
+
+green_echo "updating system packages"
+sudo apt update -y
+
+green_echo "upgrading system packages"
+sudo apt upgrade -y
+
+green_echo "applying full system upgrade"
+sudo apt full-upgrade 
+
+green_echo "updating flatpak packages"
+flatpak update -y
+
+green_echo "auto removing and cleaning the system"
+sudo apt autoremove -y
+sudo apt autoclean -y
+
+green_echo "tasks completed"
