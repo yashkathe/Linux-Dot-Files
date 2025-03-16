@@ -1,40 +1,52 @@
 return {
     {
         "williamboman/mason.nvim",
+        lazy = false,
         config = function()
             require("mason").setup()
-        end
+        end,
     },
     {
         "williamboman/mason-lspconfig.nvim",
-        dependencies = {"williamboman/mason.nvim"},
+        lazy = false,
+        dependencies = { "williamboman/mason.nvim" },
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "ts_ls", "pyright", "bashls" }
+                ensure_installed = { "lua_ls" },
             })
-        end
+        end,
     },
     {
         "neovim/nvim-lspconfig",
+        lazy = false,
         config = function()
-            local lspconfig = require("lspconfig")
-            lspconfig.lua_ls.setup({})
-            lspconfig.ts_ls.setup({})
-            lspconfig.pyright.setup({})
-            lspconfig.bashls.setup({})
+            local capabilites = require("cmp_nvim_lsp").default_capabilities()
 
-            -- Enable inline diagnostics 
+            local lspconfig = require("lspconfig")
+            lspconfig.lua_ls.setup({
+                capabilities = capabilites,
+            })
+            lspconfig.ts_ls.setup({
+                capabilities = capabilites,
+            })
+            lspconfig.pyright.setup({
+                capabilities = capabilites,
+            })
+            lspconfig.bashls.setup({
+                capabilities = capabilites,
+            })
+
+            -- Enable inline diagnostics
             vim.diagnostic.config({
-                virtual_text = true,  -- Show inline errors
-                signs = true,         -- Show signs in the gutter
-                underline = true,     -- Underline problematic code
+                virtual_text = true, -- Show inline errors
+                signs = true, -- Show signs in the gutter
+                underline = true, -- Underline problematic code
                 update_in_insert = false, -- Don't show diagnostics while typing
             })
 
-            vim.keymap.set('n', '<S-m>', vim.lsp.buf.hover, {})
-            vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
-            vim.keymap.set({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action, {})
-        end
-    }
+            vim.keymap.set("n", "<S-m>", vim.lsp.buf.hover, {})
+            vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
+            vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+        end,
+    },
 }
-
