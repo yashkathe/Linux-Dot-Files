@@ -1,6 +1,6 @@
 # My Dot Files and Scripts
 
-<img src="image.png" alt="neofetch" width="550"/>
+<img src="./images/neofetch.png" alt="neofetch" width="550"/>
 
 ## Scripts
 
@@ -38,3 +38,11 @@ wget https://raw.githubusercontent.com/yashkathe/Linux-Dot-Files-and-Scripts/ref
 ```bash
 wget https://raw.githubusercontent.com/yashkathe/Linux-Dot-Files-and-Scripts/refs/heads/master/sys-update
 ```
+
+### neovim and tmux
+
+<img src="./images/nvim1.png" alt="neofetch" width="550"/>  
+
+<img src="./images/nvim2.png" alt="neofetch" width="550"/>  
+ 
+<img src="./images/nvim3.png" alt="neofetch" width="550"/>  
