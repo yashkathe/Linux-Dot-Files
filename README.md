@@ -1,6 +1,12 @@
 # My Dot Files and Scripts
 
+<div align="center">
+
 <img src="./images/neofetch.png" alt="neofetch" width="550"/>
+
+<img src="./images/fastfetch.png" alt="fastfetch" width="550"/>
+
+</div>
 
 ## Scripts
 
@@ -40,9 +46,13 @@ wget https://raw.githubusercontent.com/yashkathe/Linux-Dot-Files-and-Scripts/ref
 ```
 
 ### neovim and tmux  
-   
+
+<div align="center">
+
 <img src="./images/nvim1.png" alt="neofetch" width="1000"/>
    
 <img src="./images/nvim2.png" alt="neofetch" width="1000"/>
     
 <img src="./images/nvim3.png" alt="neofetch" width="1000"/>
+
+</div>
