@@ -154,5 +154,8 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(thefuck --alias)"
 
 export TERM="xterm-256color"
-
+export COLORTERM="truecolor"
 fastfetch
+echo
+fortune
+echo
