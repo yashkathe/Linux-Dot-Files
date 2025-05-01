@@ -29,10 +29,15 @@ vim.api.nvim_create_autocmd("VimEnter", {
     end,
 })
 
--- Fast Scrolling
+-- Fast Vertical Scrolling
 -- Alt+Down = 5 lines down, Alt+Up = 5 lines up
 vim.keymap.set("n", "<A-Down>", "5j", { noremap = true, silent = true, desc = "Jump 5 lines down" })
 vim.keymap.set("n", "<A-Up>", "5k", { noremap = true, silent = true, desc = "Jump 5 lines up" })
+
+-- Fast Horizontal Movement
+-- Alt+Right = 5 chars right, Alt+Left = 5 chars left
+vim.keymap.set("n", "<A-Right>", "5l", { noremap = true, silent = true, desc = "Jump 5 chars right" })
+vim.keymap.set("n", "<A-Left>", "5h", { noremap = true, silent = true, desc = "Jump 5 chars left" })
 
 require("vim-config")
 require("lazy").setup("plugins")

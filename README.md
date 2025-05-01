@@ -8,24 +8,13 @@
 
 </div>
 
-## Scripts
-
-sys-update: update the whole system - placed in _/usr/local/bin/_
-
-## Dot Files
-
-vimrc - vim config file  
-bashrc - bash config file
-
 ## Instructions
 
-### vimrc
+### - sys-update
 
-installation script
+updates the whole system - placed in _/usr/local/bin/_
 
-```bash
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ && wget https://raw.githubusercontent.com/yashkathe/Linux-Dot-Files-and-Scripts/refs/heads/master/.vimrc
-```
+### - vimrc
 
 open vim and type
 
@@ -33,26 +22,14 @@ open vim and type
 :PlugInstall
 ```
 
-### bashrc
-
-```bash
-wget https://raw.githubusercontent.com/yashkathe/Linux-Dot-Files-and-Scripts/refs/heads/master/.bashrc
-```
-
-### sys-update
-
-```bash
-wget https://raw.githubusercontent.com/yashkathe/Linux-Dot-Files-and-Scripts/refs/heads/master/sys-update
-```
-
 ### neovim and tmux  
 
 <div align="center">
 
 <img src="./images/nvim1.png" alt="neofetch" width="1000"/>
-   
+
 <img src="./images/nvim2.png" alt="neofetch" width="1000"/>
-    
+
 <img src="./images/nvim3.png" alt="neofetch" width="1000"/>
 
 </div>

@@ -43,14 +43,29 @@
 
 -- THEME 3
 return {
-    "navarasu/onedark.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-        require("onedark").setup({
-            style = "dark", -- Other options: "dark", "cool", "deep", "warm", "warmer"
-        })
-        require("onedark").load()
-    end,
-}
+	"navarasu/onedark.nvim",
+	lazy = false,
+	priority = 1000,
+	config = function()
+		require("onedark").setup({ style = "dark" })
+		require("onedark").load()
 
+		-- enable true-color & transparent background
+		vim.opt.termguicolors = true
+		for _, group in ipairs({
+			"Normal",
+			"NormalNC",
+			"SignColumn",
+			"VertSplit",
+			"StatusLine",
+			"StatusLineNC",
+			"LineNr",
+			"CursorLineNr",
+			"NonText",
+			"Folded",
+			"EndOfBuffer",
+		}) do
+			vim.api.nvim_set_hl(0, group, { ctermbg = "none", bg = "none" })
+		end
+	end,
+}
