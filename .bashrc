@@ -159,3 +159,5 @@ fastfetch
 echo
 fortune
 echo
+
+export PATH=$PATH:/home/yashkathe/.spicetify
