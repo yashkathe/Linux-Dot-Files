@@ -22,14 +22,18 @@ open vim and type
 :PlugInstall
 ```
 
-### neovim and tmux  
+### neovim and tmux
 
 <div align="center">
 
-<img src="./images/nvim1.png" alt="neofetch" width="1000"/>
+<img src="./images/nvim1.png" alt="neofetch1" width="1000"/>
 
-<img src="./images/nvim2.png" alt="neofetch" width="1000"/>
+<img src="./images/nvim2.png" alt="neofetch2" width="1000"/>
 
-<img src="./images/nvim3.png" alt="neofetch" width="1000"/>
+<img src="./images/nvim3.png" alt="neofetch3" width="1000"/>
+
+### ncspot and cava with tmux
+
+<img src="./images/music.gif" alt="music-script" width="1000"/>
 
 </div>
