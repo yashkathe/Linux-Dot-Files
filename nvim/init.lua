@@ -14,7 +14,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Disable netrw so `nvim .` won’t fall back to it
+-- Disable netrw so nvim . won’t fall back to it
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -28,6 +28,14 @@ vim.api.nvim_create_autocmd("VimEnter", {
 		end
 	end,
 })
+
+-- Turn of Syntax Highlight after Searching a Pattern
+vim.keymap.set(
+	"n",
+	"<Esc>",
+	"<cmd>nohlsearch<CR><Esc>",
+	{ noremap = true, silent = true, desc = "Clear search highlight" }
+)
 
 -- Fast Vertical Scrolling
 -- Alt+Down = 5 lines down, Alt+Up = 5 lines up
