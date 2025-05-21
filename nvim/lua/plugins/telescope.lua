@@ -6,7 +6,6 @@ return {
 		config = function()
 			local builtin = require("telescope.builtin")
 
-			-- Keybindings for Telescope
 			vim.keymap.set("n", "<A-t>", builtin.find_files, {})
 			vim.keymap.set("n", "<S-t>", builtin.live_grep, {})
 			vim.keymap.set("n", "<C-t>", builtin.current_buffer_fuzzy_find, {})
