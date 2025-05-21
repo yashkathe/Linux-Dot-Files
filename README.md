@@ -32,7 +32,11 @@ open vim and type
 
 <img src="./images/nvim3.png" alt="neofetch3" width="1000"/>
 
+</div>
+
 ### ncspot and cava with tmux
+
+<div align="center">
 
 <img src="./images/music.gif" alt="music-script" width="1000"/>
 
