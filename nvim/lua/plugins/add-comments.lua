@@ -5,12 +5,10 @@ return {
         config = function()
             require("Comment").setup({
                 toggler = {
-                    line = "<C-_>",
-                    block = "<C-?>",
+                    line = "gcc",
                 },
                 opleader = {
-                    line = "<C-_>",
-                    block = "<C-?>",
+                    line = "gc",
                 },
                 mappings = {
                     basic = true,
